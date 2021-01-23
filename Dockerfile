@@ -68,7 +68,7 @@ RUN cd /root && \
     cd /root/xrdp && ./bootstrap && ./configure --enable-fuse --enable-jpeg --enable-vsock --enable-fdkaac --enable-opus --enable-mp3lame --enable-pixman && make && make install && \
     cd /root/xorgxrdp  && ./bootstrap && ./configure && make && make install && \
     cd /home && \
-    git clone https://github.com/aminesoukara/vcpb.git vcpb && \
+    git clone https://github.com/AmineSoukara/vcpbx.git vcpbx && \
     cd /root && \
     rm -R /root/xrdp && \
     rm -R /root/xorgxrdp && \
@@ -105,7 +105,7 @@ RUN cd /root && \
     apt update && apt -y upgrade && \
     apt-get install -yqq \
         pavucontrol && \
-    cd /home/vcpb && \
+    cd /home/vcpbx && \
     pip3 install -U -r requirements.txt && \
     cd /home && \
     wget https://telegram.org/dl/desktop/linux -O tdesktop.tar.xz && tar -xf tdesktop.tar.xz && rm tdesktop.tar.xz && \
