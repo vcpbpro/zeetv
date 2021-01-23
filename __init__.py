@@ -1,5 +1,5 @@
 """
-Replacement for vcpb/config/__init__.py
+Replacement for vcpbx/config/__init__.py
 """
 import ast
 from os import environ
